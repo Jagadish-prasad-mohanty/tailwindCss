@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <ul class='flex bg-purple-900 py-4 px-4 text-white'>
-        <li class='mx-2'>Hi there</li>
-        <li class='mx-2'>Hi there</li>
-        <li class='mx-2'>Hi there</li>
-    </ul>
+<body class="h-screen">
+    <nav class="bg-purple-800 mx-auto text-white flex justify-between pl-12  items-center">
+        <h3 class="font-bold text-red-500 text-xl">FakeProduct</h3>
+        <ul class="flex space-x-4  px-24  py-2 justify-end">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Product</li>
+            <li class="cursor-pointer">Profile</li>
+            <li class="cursor-pointer">Login</li>
+        </ul>
+    </nav>
+    <main class="bg-green-100 h-2/3 py-40 pl-5 flex items-center justify-center">
+        <div class="w-3/5">
+
+            <div class="">
+                <h1 class="text-3xl ">Welcome To <span class=" cursor-pointer transition-all duration-1000 hover:scale-125 bg-green-300 px-2 rounded-2xl"><h3 class="text-red-700 inline-block">RedEye</h3></span> Store</h1>
+            </div>
+            <p class="font-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias sint quam voluptates quia doloremque dolor optio doloribus iste!</p>
+            <div class="text-white my-5">
+                <button class="bg-purple-800 px-3 py-1 mx-2 rounded-xl hover:bg-white hover:text-purple-800 hover:border-purple-800 cursor-pointer ">Submit</button>
+                <button class="bg-purple-800 px-3 py-1 mx-2 rounded-xl hover:bg-white hover:text-purple-800 hover:border-purple-800 cursor-pointer">More..</button>
+            </div>
+        </div>
+        <div class="w-2/5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Man_Looking_at_Phone_Cartoon_Vector.svg/1200px-Man_Looking_at_Phone_Cartoon_Vector.svg.png" class="bg-transparent h-64 "/>
+        </div>
+    </main>
 </body>
 </html>
