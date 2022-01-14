@@ -11,26 +11,30 @@
 <body class="h-screen">
     <nav class="bg-purple-800 mx-auto text-white flex justify-between pl-12  items-center">
         <h3 class="font-bold text-red-500 text-xl">FakeProduct</h3>
-        <ul class="flex space-x-4  px-24  py-2 justify-end">
-            <li class="cursor-pointer">Home</li>
-            <li class="cursor-pointer">Product</li>
-            <li class="cursor-pointer">Profile</li>
-            <li class="cursor-pointer">Login</li>
+        <ul class="   px-24  py-2 justify-end hidden sm:flex sm:space-x-4">
+            <li class="cursor-pointer hover:text-yellow-400 text-yellow-400">Home</li>
+            <li class="cursor-pointer hover:text-yellow-400">Product</li>
+            <li class="cursor-pointer hover:text-yellow-400">Profile</li>
+            <li class="cursor-pointer hover:text-yellow-400">Login</li>
+        </ul>
+        <ul class="px-24  py-2 flex sm:hidden space-x-4">
+            <li class="cursor-pointer ">*</li>
         </ul>
     </nav>
-    <main class="bg-green-100 h-2/3 py-40 pl-5 flex items-center justify-center">
-        <div class="w-3/5">
+    <main class="bg-green-100 py-40 pl-5  sm:flex  items-center justify-center">
+        <div class="w-4/5 sm:3/5">
 
             <div class="">
-                <h1 class="text-3xl ">Welcome To <span class=" cursor-pointer transition-all duration-1000 hover:scale-125 bg-green-300 px-2 rounded-2xl"><h3 class="text-red-700 inline-block">RedEye</h3></span> Store</h1>
+                <h1 class="text-3xl mb-4">Welcome To <span class=" cursor-pointer transition-all duration-1000 hover:scale-125 bg-green-300 px-2 rounded-2xl"><h3 class="text-red-700 inline-block">RedEye</h3></span> Store</h1>
             </div>
             <p class="font-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias sint quam voluptates quia doloremque dolor optio doloribus iste!</p>
             <div class="text-white my-5">
-                <button class="bg-purple-800 px-3 py-1 mx-2 rounded-xl hover:bg-white hover:text-purple-800 hover:border-purple-800 cursor-pointer ">Submit</button>
-                <button class="bg-purple-800 px-3 py-1 mx-2 rounded-xl hover:bg-white hover:text-purple-800 hover:border-purple-800 cursor-pointer">More..</button>
+                <button class="bg-yellow-700 px-3 py-1 mx-2 rounded-xl hover:bg-white hover:text-yellow-700 hover:border-yellow-700 cursor-pointer active:bg-yellow-500 active:text-white">Submit</button>
+                <button class="bg-yellow-700 px-3 py-1 mx-2 rounded-xl hover:bg-white hover:text-yellow-700 hover:border-yellow-700 cursor-pointer active:bg-yellow-500 active:text-white">More..</button>
+                
             </div>
         </div>
-        <div class="w-2/5">
+        <div class="w-2/5 hidden sm:block">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Man_Looking_at_Phone_Cartoon_Vector.svg/1200px-Man_Looking_at_Phone_Cartoon_Vector.svg.png" class="bg-transparent h-64 "/>
         </div>
     </main>
